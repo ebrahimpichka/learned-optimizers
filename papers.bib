@@ -1,0 +1,475 @@
+@comment{% Exported from ResearchRabbit (https://www.researchrabbit.ai)}
+
+@article{celo_moudgil_2025,
+ abstract = {Learned optimization has emerged as a promising alternative to hand-crafted optimizers, with the potential to discover stronger learned update rules that enable faster, hyperparameter-free training of neural networks. A critical element for practically useful learned optimizers, that can be used off-the-shelf after meta-training, is strong meta-generalization: the ability to apply the optimizers to new tasks. Recent state-of-the-art work in learned optimizers, VeLO (Metz et al., 2022), requires a large number of highly diverse meta-training tasks along with massive computational resources, 4000 TPU months, to achieve meta-generalization. This makes further improvements to such learned optimizers impractical. In this work, we identify several key elements in learned optimizer architectures and meta-training procedures that can lead to strong meta-generalization. We also propose evaluation metrics to reliably assess quantitative performance of an optimizer at scale on a set of evaluation tasks. Our proposed approach, Celo, makes a significant leap in improving the meta-generalization performance of learned optimizers and also outperforms tuned state-of-the-art optimizers on a diverse set of out-of-distribution tasks, despite being meta-trained for just 24 GPU hours.},
+ archivePrefix = {arXiv},
+ arxivid = {2501.12670},
+ author = {Moudgil, Abhinav and Knyazev, Boris and Lajoie, Guillaume and Belilovsky, Eugene},
+ eprint = {2501.12670},
+ journal = {Trans. Mach. Learn. Res.},
+ primaryClass = {cs.LG},
+ researchrabbitid = {d29f6fba-792c-4056-b6e3-c55f2acf7380},
+ title = {Celo: Training Versatile Learned Optimizers on a Compute Diet},
+ url = {https://www.semanticscholar.org/paper/3fd5e6f90f34109f8737cb307d29d08a3638bd24},
+ year = {2025}
+}
+
+@article{closer_harrison_2022,
+ abstract = {Learned optimizers -- neural networks that are trained to act as optimizers -- have the potential to dramatically accelerate training of machine learning models. However, even when meta-trained across thousands of tasks at huge computational expense, blackbox learned optimizers often struggle with stability and generalization when applied to tasks unlike those in their meta-training set. In this paper, we use tools from dynamical systems to investigate the inductive biases and stability properties of optimization algorithms, and apply the resulting insights to designing inductive biases for blackbox optimizers. Our investigation begins with a noisy quadratic model, where we characterize conditions in which optimization is stable, in terms of eigenvalues of the training dynamics. We then introduce simple modifications to a learned optimizer's architecture and meta-training procedure which lead to improved stability, and improve the optimizer's inductive bias. We apply the resulting learned optimizer to a variety of neural network training tasks, where it outperforms the current state of the art learned optimizer -- at matched optimizer computational overhead -- with regard to optimization performance and meta-training speed, and is capable of generalization to tasks far different from those it was meta-trained on.},
+ archivePrefix = {arXiv},
+ arxivid = {2209.11208},
+ author = {Harrison, J. and Metz, Luke and Sohl‐Dickstein, Jascha},
+ doi = {10.48550/ARXIV.2209.11208},
+ eprint = {2209.11208},
+ journal = {Neural Information Processing Systems},
+ primaryClass = {cs.LG},
+ researchrabbitid = {3c0d4eb9-a232-4dbe-b790-9e8b75a42f5a},
+ title = {A Closer Look at Learned Optimization: Stability, Robustness, and Inductive Biases},
+ url = {https://www.semanticscholar.org/paper/2d59b386a6037a895edf72c4420b76f64d921ee4},
+ year = {2022}
+}
+
+@article{graph_kofinas_2024,
+ abstract = {Neural networks that process the parameters of other neural networks find applications in domains as diverse as classifying implicit neural representations, generating neural network weights, and predicting generalization errors. However, existing approaches either overlook the inherent permutation symmetry in the neural network or rely on intricate weight-sharing patterns to achieve equivariance, while ignoring the impact of the network architecture itself. In this work, we propose to represent neural networks as computational graphs of parameters, which allows us to harness powerful graph neural networks and transformers that preserve permutation symmetry. Consequently, our approach enables a single model to encode neural computational graphs with diverse architectures. We showcase the effectiveness of our method on a wide range of tasks, including classification and editing of implicit neural representations, predicting generalization performance, and learning to optimize, while consistently outperforming state-of-the-art methods. The source code is open-sourced at https://github.com/mkofinas/neural-graphs.},
+ archivePrefix = {arXiv},
+ arxivid = {2403.12143},
+ author = {Kofinas, Miltiadis and Knyazev, Boris and Zhang, Yan and Chen, Yunlu and Burghouts, Gertjan J. and Gavves, Efstratios and Snoek, Cees G. M. and Zhang, David},
+ doi = {10.48550/ARXIV.2403.12143},
+ eprint = {2403.12143},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {7824949d-081f-4a4b-b15e-fe5435407bc4},
+ title = {Graph Neural Networks for Learning Equivariant Representations of Neural Networks},
+ url = {https://www.semanticscholar.org/paper/fc580c211689663a64f42e2ba92c864cb134ba9b},
+ year = {2024}
+}
+
+@article{graph_lim_2023,
+ abstract = {Neural networks efficiently encode learned information within their parameters. Consequently, many tasks can be unified by treating neural networks themselves as input data. When doing so, recent studies demonstrated the importance of accounting for the symmetries and geometry of parameter spaces. However, those works developed architectures tailored to specific networks such as MLPs and CNNs without normalization layers, and generalizing such architectures to other types of networks can be challenging. In this work, we overcome these challenges by building new metanetworks - neural networks that take weights from other neural networks as input. Put simply, we carefully build graphs representing the input neural networks and process the graphs using graph neural networks. Our approach, Graph Metanetworks (GMNs), generalizes to neural architectures where competing methods struggle, such as multi-head attention layers, normalization layers, convolutional layers, ResNet blocks, and group-equivariant linear layers. We prove that GMNs are expressive and equivariant to parameter permutation symmetries that leave the input neural network functions unchanged. We validate the effectiveness of our method on several metanetwork tasks over diverse neural network architectures.},
+ archivePrefix = {arXiv},
+ arxivid = {2312.04501},
+ author = {Lim, Derek and Maron, Haggai and Law, Marc T. and Lorraine, Jonathan and Lucas, James M.},
+ doi = {10.48550/ARXIV.2312.04501},
+ eprint = {2312.04501},
+ journal = {arXiv (Cornell University)},
+ primaryClass = {cs.LG},
+ researchrabbitid = {6600abb0-96a3-4e23-9f58-43915fbe288f},
+ title = {Graph Metanetworks for Processing Diverse Neural Architectures},
+ url = {https://www.semanticscholar.org/paper/af8df99efea4d4ed6f5cf6f6eaf3a5943f4d75db},
+ year = {2023}
+}
+
+@article{improving_bihlo_2023,
+ abstract = {We show that the error achievable using physics-informed neural networks for solving systems of differential equations can be substantially reduced when these networks are trained using meta-learned optimization methods rather than to using fixed, hand-crafted optimizers as traditionally done. We choose a learnable optimization method based on a shallow multi-layer perceptron that is meta-trained for specific classes of differential equations. We illustrate meta-trained optimizers for several equations of practical relevance in mathematical physics, including the linear advection equation, Poisson's equation, the Korteweg--de Vries equation and Burgers' equation. We also illustrate that meta-learned optimizers exhibit transfer learning abilities, in that a meta-trained optimizer on one differential equation can also be successfully deployed on another differential equation.},
+ archivePrefix = {arXiv},
+ arxivid = {2303.07127},
+ author = {Bihlo, Alex},
+ doi = {10.48550/ARXIV.2303.07127},
+ eprint = {2303.07127},
+ journal = {arXiv (Cornell University)},
+ primaryClass = {cs.LG},
+ researchrabbitid = {0feca0c8-46e1-40f3-8795-6ba6e448cdd5},
+ title = {Improving physics-informed neural networks with meta-learned
+optimization},
+ url = {https://www.semanticscholar.org/paper/4f9f96679e943f7447ac431dffea506767d3cf3f},
+ year = {2023}
+}
+
+@article{learned_goldie_2024,
+ abstract = {While reinforcement learning (RL) holds great potential for decision making in the real world, it suffers from a number of unique difficulties which often need specific consideration. In particular: it is highly non-stationary; suffers from high degrees of plasticity loss; and requires exploration to prevent premature convergence to local optima and maximize return. In this paper, we consider whether learned optimization can help overcome these problems. Our method, Learned Optimization for Plasticity, Exploration and Non-stationarity (OPEN), meta-learns an update rule whose input features and output structure are informed by previously proposed solutions to these difficulties. We show that our parameterization is flexible enough to enable meta-learning in diverse learning contexts, including the ability to use stochasticity for exploration. Our experiments demonstrate that when meta-trained on single and small sets of environments, OPEN outperforms or equals traditionally used optimizers. Furthermore, OPEN shows strong generalization characteristics across a range of environments and agent architectures.},
+ archivePrefix = {arXiv},
+ arxivid = {2407.07082},
+ author = {Goldie, Alexander David and Lu, Chris Xiaoxuan and Jackson, Matthew Thomas and Whiteson, Shimon and Foerster, Jakob},
+ doi = {10.48550/ARXIV.2407.07082},
+ eprint = {2407.07082},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {38f04096-beaf-4d3b-9b53-3ac0265b57f9},
+ title = {Can Learned Optimization Make Reinforcement Learning Less Difficult?},
+ url = {https://www.semanticscholar.org/paper/5ecf53ab083f72f10421225a7dde25eb51cb6b22},
+ year = {2024}
+}
+
+@article{learned_subramanian_2022,
+ author = {Subramanian, Shreyas Vathul and Ganapathiraman, Vignesh and Gamal, Aly El},
+ journal = {Tiny Papers @ ICLR},
+ researchrabbitid = {174b44a2-de2a-494b-803a-ed065cb6d7b8},
+ title = {Learned Learning Rate Schedules for Deep Neural Network Training Using Reinforcement Learning},
+ url = {https://www.semanticscholar.org/paper/e8b22993efec83105daae948878a2c2ec0358c85},
+ year = {2022}
+}
+
+@article{learned_wichrowska_2017,
+ abstract = {Learning to learn has emerged as an important direction for achieving artificial intelligence. Two of the primary barriers to its adoption are an inability to scale to larger problems and a limited ability to generalize to new tasks. We introduce a learned gradient descent optimizer that generalizes well to new tasks, and which has significantly reduced memory and computation overhead. We achieve this by introducing a novel hierarchical RNN architecture, with minimal per-parameter overhead, augmented with additional architectural features that mirror the known structure of optimization tasks. We also develop a meta-training ensemble of small, diverse, optimization tasks capturing common properties of loss landscapes. The optimizer learns to outperform RMSProp/ADAM on problems in this corpus. More importantly, it performs comparably or better when applied to small convolutional neural networks, despite seeing no neural networks in its meta-training set. Finally, it generalizes to train Inception V3 and ResNet V2 architectures on the ImageNet dataset for thousands of steps, optimization problems that are of a vastly different scale than those it was trained on.},
+ archivePrefix = {arXiv},
+ arxivid = {1703.04813},
+ author = {Wichrowska, Olga and Maheswaranathan, Niru and Hoffman, Matthew W. and Colmenarejo, Sergio Gómez and Denil, Misha and Freitas, Nando de and Sohl‐Dickstein, Jascha},
+ eprint = {1703.04813},
+ journal = {International Conference on Machine Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {731ce88b-8264-4e5e-b139-554934be19a9},
+ title = {Learned optimizers that scale and generalize},
+ url = {https://www.semanticscholar.org/paper/b8ff7e02ffa1577d125acd3e998e8ce76a9059dc},
+ year = {2017}
+}
+
+@article{learned_wichrowska_2017,
+ abstract = {Learning to learn has emerged as an important direction for achieving artificial intelligence. Two of the primary barriers to its adoption are an inability to scale to larger problems and a limited ability to generalize to new tasks. We introduce a learned gradient descent optimizer that generalizes well to new tasks, and which has significantly reduced memory and computation overhead. We achieve this by introducing a novel hierarchical RNN architecture, with minimal per-parameter overhead, augmented with additional architectural features that mirror the known structure of optimization tasks. We also develop a meta-training ensemble of small, diverse, optimization tasks capturing common properties of loss landscapes. The optimizer learns to outperform RMSProp/ADAM on problems in this corpus. More importantly, it performs comparably or better when applied to small convolutional neural networks, despite seeing no neural networks in its meta-training set. Finally, it generalizes to train Inception V3 and ResNet V2 architectures on the ImageNet dataset for thousands of steps, optimization problems that are of a vastly different scale than those it was trained on.},
+ archivePrefix = {arXiv},
+ arxivid = {1703.04813},
+ author = {Wichrowska, Olga N and Maheswaranathan, Niru and Hoffman, Matt and Colmenarejo, Sergio Gómez and Denil, Misha and Freitas, Nando de and Sohl-Dickstein, Jascha Narain},
+ eprint = {1703.04813},
+ journal = {International Conference on Machine Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {4f0ea22e-a996-4fb1-b4cf-db8dfcb24e6d},
+ title = {Learned Optimizers that Scale and Generalize},
+ url = {https://www.semanticscholar.org/paper/b8ff7e02ffa1577d125acd3e998e8ce76a9059dc},
+ year = {2017}
+}
+
+@article{learning_andrychowicz_2016,
+ abstract = {The move from hand-designed features to learned features in machine learning has been wildly successful. In spite of this, optimization algorithms are still designed by hand. In this paper we show how the design of an optimization algorithm can be cast as a learning problem, allowing the algorithm to learn to exploit structure in the problems of interest in an automatic way. Our learned algorithms, implemented by LSTMs, outperform generic, hand-designed competitors on the tasks for which they are trained, and also generalize well to new tasks with similar structure. We demonstrate this on a number of tasks, including simple convex problems, training neural networks, and styling images with neural art.},
+ archivePrefix = {arXiv},
+ arxivid = {1606.04474},
+ author = {Andrychowicz, Marcin and Denil, Misha and Gómez, Sergio Luis Suárez and Hoffman, Matthew W. and Pfau, David and Schaul, Tom and Shillingford, Brendan and Freitas, Nando de},
+ eprint = {1606.04474},
+ journal = {Neural Information Processing Systems},
+ primaryClass = {cs.LG},
+ researchrabbitid = {485556ea-9d01-4929-b9df-aaac95ded53c},
+ title = {Learning to learn by gradient descent by gradient descent},
+ url = {https://www.semanticscholar.org/paper/71683e224ab91617950956b5005ed0439a733a71},
+ year = {2016}
+}
+
+@article{learning_chen_2017,
+ author = {Chen, Yutian and Hoffman, Matthew W. and Colmenarejo, Sergio Gómez and Denil, Misha and Lillicrap, Timothy and Botvinick, Matt and Freitas, Nando de},
+ journal = {International Conference on Machine Learning},
+ researchrabbitid = {96fe578d-484c-4738-becc-10c83ad08bcd},
+ title = {Learning to Learn without Gradient Descent by Gradient Descent},
+ url = {https://www.semanticscholar.org/paper/b5fdbacc37f1d5e1a72c292ac2107c06c7bd6d4f},
+ year = {2017}
+}
+
+@article{learning_chen_2021,
+ abstract = {Learning to optimize (L2O) is an emerging approach that leverages machine learning to develop optimization methods, aiming at reducing the laborious iterations of hand engineering. It automates the design of an optimization method based on its performance on a set of training problems. This data-driven procedure generates methods that can efficiently solve problems similar to those in the training. In sharp contrast, the typical and traditional designs of optimization methods are theory-driven, so they obtain performance guarantees over the classes of problems specified by the theory. The difference makes L2O suitable for repeatedly solving a certain type of optimization problems over a specific distribution of data, while it typically fails on out-of-distribution problems. The practicality of L2O depends on the type of target optimization, the chosen architecture of the method to learn, and the training procedure. This new paradigm has motivated a community of researchers to explore L2O and report their findings. This article is poised to be the first comprehensive survey and benchmark of L2O for continuous optimization. We set up taxonomies, categorize existing works and research directions, present insights, and identify open challenges. We also benchmarked many existing L2O approaches on a few but representative optimization problems. For reproducible research and fair benchmarking purposes, we released our software implementation and data in the package Open-L2O at https://github.com/VITA-Group/Open-L2O.},
+ archivePrefix = {arXiv},
+ arxivid = {2103.12828},
+ author = {Chen, Tianlong and Chen, Xiaohan and Chen, Wuyang and Heaton, Howard and Liu, Jialin and Wang, Zhangyang and Yin, Wotao},
+ eprint = {2103.12828},
+ journal = {arXiv: Optimization and Control},
+ primaryClass = {cs.LG},
+ researchrabbitid = {92229a1c-3873-4d6a-8971-65ed84857b98},
+ title = {Learning to Optimize: A Primer and A Benchmark.},
+ url = {https://www.semanticscholar.org/paper/f401a919db41eca28aa1cff062d98cc03b7ab66b},
+ year = {2021}
+}
+
+@article{learning_hochreiter_2001,
+ author = {Hochreiter, Sepp and Younger, A. Steven and Conwell, Peter R.},
+ doi = {10.1007/3-540-44668-0_13},
+ journal = {International Conference on Artificial Neural Networks},
+ researchrabbitid = {7d60667a-35e1-48be-9745-ab12a144c530},
+ title = {Learning to Learn Using Gradient Descent},
+ url = {https://www.semanticscholar.org/paper/044b2c29e0a54dc689786bd4d029b9ba6e355d58},
+ year = {2001}
+}
+
+@article{learning_li_2016,
+ author = {Li, Ke and Malik, Jitendra},
+ journal = {ICLR},
+ researchrabbitid = {cbb19d2f-e776-413d-8d83-beb677519216},
+ title = {Learning to Optimize},
+ url = {https://www.semanticscholar.org/paper/43c00597f8d59659af97dc35b24a836e8bd9b82a},
+ year = {2016}
+}
+
+@article{learning_li_2017,
+ abstract = {Learning to Optimize is a recently proposed framework for learning optimization algorithms using reinforcement learning. In this paper, we explore learning an optimization algorithm for training shallow neural nets. Such high-dimensional stochastic optimization problems present interesting challenges for existing reinforcement learning algorithms. We develop an extension that is suited to learning optimization algorithms in this setting and demonstrate that the learned optimization algorithm consistently outperforms other known optimization algorithms even on unseen tasks and is robust to changes in stochasticity of gradients and the neural net architecture. More specifically, we show that an optimization algorithm trained with the proposed method on the problem of training a neural net on MNIST generalizes to the problems of training neural nets on the Toronto Faces Dataset, CIFAR-10 and CIFAR-100.},
+ archivePrefix = {arXiv},
+ arxivid = {1703.00441},
+ author = {Li, Ke and Malik, Jitendra},
+ eprint = {1703.00441},
+ journal = {arXiv: Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {f07f447a-b769-43f1-b52a-a09b88210322},
+ title = {Learning to Optimize Neural Nets},
+ url = {https://www.semanticscholar.org/paper/5b8e5804c3adeb4a4e60f8f7d8d76aab0e02cfbe},
+ year = {2017}
+}
+
+@article{learning_lv_2017,
+ abstract = {Training deep neural networks is a highly nontrivial task, involving carefully selecting appropriate training algorithms, scheduling step sizes and tuning other hyperparameters. Trying different combinations can be quite labor-intensive and time consuming. Recently, researchers have tried to use deep learning algorithms to exploit the landscape of the loss function of the training problem of interest, and learn how to optimize over it in an automatic way. In this paper, we propose a new learning-to-learn model and some useful and practical tricks. Our optimizer outperforms generic, hand-crafted optimization algorithms and state-of-the-art learning-to-learn optimizers by DeepMind in many tasks. We demonstrate the effectiveness of our algorithms on a number of tasks, including deep MLPs, CNNs, and simple LSTMs.},
+ archivePrefix = {arXiv},
+ arxivid = {1703.03633},
+ author = {Lv, Kaifeng and Jiang, Shunhua and Li, Jian},
+ eprint = {1703.03633},
+ journal = {international conference on machine learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {95d537b0-99b6-4531-bc07-3fa0ee3f50f7},
+ title = {Learning Gradient Descent: Better Generalization and Longer Horizons},
+ url = {https://www.semanticscholar.org/paper/822e7515152e74626265c26b7aaccd2c654b5eba},
+ year = {2017}
+}
+
+@article{learning_ren_2007,
+ abstract = {Learning to optimize (L2O) has gained increasing popularity, which automates the design of optimizers by data-driven approaches. However, current L2O methods often suffer from poor generalization performance in at least two folds: (i) applying the L2O-learned optimizer to unseen optimizees, in terms of lowering their loss function values (optimizer generalization, or ``generalizable learning of optimizers"); and (ii) the test performance of an optimizee (itself as a machine learning model), trained by the optimizer, in terms of the accuracy over unseen data (optimizee generalization, or ``learning to generalize"). While the optimizer generalization has been recently studied, the optimizee generalization (or learning to generalize) has not been rigorously studied in the L2O context, which is the aim of this paper. We first theoretically establish an implicit connection between the local entropy and the Hessian, and hence unify their roles in the handcrafted design of generalizable optimizers as equivalent metrics of the landscape flatness of loss functions. We then propose to incorporate these two metrics as flatness-aware regularizers into the L2O framework in order to meta-train optimizers to learn to generalize, and theoretically show that such generalization ability can be learned during the L2O meta-training process and then transformed to the optimizee loss function. Extensive experiments consistently validate the effectiveness of our proposals with substantially improved generalization on multiple sophisticated L2O models and diverse optimizees. Our code is available at: https://github.com/VITA-Group/Open-L2O/tree/main/Model_Free_L2O/L2O-Entropy.},
+ archivePrefix = {arXiv},
+ arxivid = {2302.11085},
+ author = {Ören, Tuncer and Zeigler, Bernard P.},
+ doi = {10.48550/arXiv.2302.11085},
+ eprint = {2302.11085},
+ journal = {International Conference on Artificial Intelligence and Statistics},
+ primaryClass = {cs.LG},
+ researchrabbitid = {dd86f3b3-3721-4f16-8663-576a35457e97},
+ title = {Learning to Optimize},
+ url = {https://www.semanticscholar.org/paper/92c8217f50062673ab108f7ea64b20333f2008df},
+ year = {2007}
+}
+
+@article{learning_wang_2016,
+ abstract = {In recent years deep reinforcement learning (RL) systems have attained superhuman performance in a number of challenging task domains. However, a major limitation of such applications is their demand for massive amounts of training data. A critical present objective is thus to develop deep RL methods that can adapt rapidly to new tasks. In the present work we introduce a novel approach to this challenge, which we refer to as deep meta-reinforcement learning. Previous work has shown that recurrent networks can support meta-learning in a fully supervised context. We extend this approach to the RL setting. What emerges is a system that is trained using one RL algorithm, but whose recurrent dynamics implement a second, quite separate RL procedure. This second, learned RL algorithm can differ from the original one in arbitrary ways. Importantly, because it is learned, it is configured to exploit structure in the training domain. We unpack these points in a series of seven proof-of-concept experiments, each of which examines a key aspect of deep meta-RL. We consider prospects for extending and scaling up the approach, and also point out some potentially important implications for neuroscience.},
+ archivePrefix = {arXiv},
+ arxivid = {1611.05763},
+ author = {Wang, Jane X. and Kurth‐Nelson, Zeb and Tirumala, Dhruva and Soyer, Hubert and Leibo, Joel Z. and Munos, Rémi and Blundell, Charles and Kumaran, Dharshan and Botvinick, Matt},
+ eprint = {1611.05763},
+ journal = {arXiv: Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {77a5b0d8-807f-4b80-a681-c32e7d563e49},
+ title = {Learning to reinforcement learn},
+ url = {https://www.semanticscholar.org/paper/282a380fb5ac26d99667224cef8c630f6882704f},
+ year = {2016}
+}
+
+@article{lo_thrien_2024,
+ abstract = {Learned optimizers (LOs) have the potential to significantly reduce the wall-clock training time of neural networks. However, they can struggle to optimize unseen tasks (\emph{meta-generalize}), especially when training networks wider than those seen during meta-training. To address this, we derive the Maximal Update Parametrization ($\mu$P) for two state-of-the-art learned optimizer architectures and propose a simple meta-training recipe for $\mu$-parameterized LOs ($\mu$LOs). Our empirical evaluation demonstrates that LOs meta-trained with our recipe substantially improve meta-generalization to wider unseen tasks when compared to LOs trained under standard parametrization (SP) using the same compute budget. We also empirically observe that $\mu$LOs exhibit unexpectedly improved meta-generalization to deeper networks ($5\times$ meta-training) and surprising generalization to much longer training horizons ($25\times$ meta-training) when compared to SP LOs.},
+ archivePrefix = {arXiv},
+ arxivid = {2406.00153},
+ author = {Thérien, Benjamin and Joseph, C. and Knyazev, B. A. and Oyallon, Edouard and Rish, Irina and Belilovsky, Eugene},
+ doi = {10.48550/ARXIV.2406.00153},
+ eprint = {2406.00153},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {1566527e-59db-449a-b9cf-0bfad21a454c},
+ title = {μLO: Compute-Efficient Meta-Generalization of Learned Optimizers},
+ url = {https://www.semanticscholar.org/paper/7cb61bf31a57366343b323f554e71be35ee83b91},
+ year = {2024}
+}
+
+@article{mada_ozkara_2024,
+ abstract = {Following the introduction of Adam, several novel adaptive optimizers for deep learning have been proposed. These optimizers typically excel in some tasks but may not outperform Adam uniformly across all tasks. In this work, we introduce Meta-Adaptive Optimizers (MADA), a unified optimizer framework that can generalize several known optimizers and dynamically learn the most suitable one during training. The key idea in MADA is to parameterize the space of optimizers and dynamically search through it using hyper-gradient descent during training. We empirically compare MADA to other popular optimizers on vision and language tasks, and find that MADA consistently outperforms Adam and other popular optimizers, and is robust against sub-optimally tuned hyper-parameters. MADA achieves a greater validation performance improvement over Adam compared to other popular optimizers during GPT-2 training and fine-tuning. We also propose AVGrad, a modification of AMSGrad that replaces the maximum operator with averaging, which is more suitable for hyper-gradient optimization. Finally, we provide a convergence analysis to show that parameterized interpolations of optimizers can improve their error bounds (up to constants), hinting at an advantage for meta-optimizers.},
+ archivePrefix = {arXiv},
+ arxivid = {2401.08893},
+ author = {Ozkara, Kaan and Karakus, Can and Raman, Parameswaran and Hong, Mingyi and Sabach, Shoham and Kveton, Branislav and Cevher, Volkan},
+ doi = {10.48550/ARXIV.2401.08893},
+ eprint = {2401.08893},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {40773d01-b207-4895-a24f-5e98479795e1},
+ title = {MADA: Meta-Adaptive Optimizers through hyper-gradient Descent},
+ url = {https://www.semanticscholar.org/paper/bef33d15c3e8d433261f97f7001cc41a5ae0ec32},
+ year = {2024}
+}
+
+@article{metalearning__2023,
+ abstract = {Communication-efficient variants of SGD, specifically local SGD, have received a great deal of interest in recent years. These approaches compute multiple gradient steps locally on each worker, before averaging model parameters, helping relieve the critical communication bottleneck in distributed deep learning training. Although many variants of these approaches have been proposed, they can sometimes lag behind state-of-the-art adaptive optimizers for deep learning. In this work, we investigate if the recent progress in the emerging area of learned optimizers can potentially close this gap in homogeneous data and homogeneous device settings while remaining communication-efficient. Specifically, we meta-learn how to perform global updates given an update from local SGD iterations. Our results demonstrate that learned optimizers can substantially outperform local SGD and its sophisticated variants while maintaining their communication efficiency. Our learned optimizers can even generalize to unseen and much larger datasets and architectures, including ImageNet and ViTs, and to unseen modalities such as language modeling. We therefore show the potential of learned optimizers for improving communication-efficient distributed learning.},
+ archivePrefix = {arXiv},
+ arxivid = {2312.02204},
+ author = {Charles-'Etienne Joseph},
+ eprint = {2312.02204},
+ journal = {Trans. Mach. Learn. Res.},
+ primaryClass = {cs.LG},
+ researchrabbitid = {9ebb73ef-86f9-4bb3-9bb2-91a1104fd4f1},
+ title = {Meta-learning Optimizers for Communication-Efficient Learning},
+ url = {https://www.semanticscholar.org/paper/4ff9ae519bd9084af922479955b53674afcdb3fb},
+ year = {2023}
+}
+
+@article{modelagnostic__2017,
+ abstract = {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.},
+ archivePrefix = {arXiv},
+ arxivid = {1703.03400},
+ author = {Chelsea Finn},
+ eprint = {1703.03400},
+ journal = {International Conference on Machine Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {e645c849-4f43-438c-83db-d8633497fbdd},
+ title = {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks},
+ url = {https://www.semanticscholar.org/paper/c889d6f98e6d79b89c3a6adf8a921f88fa6ba518},
+ year = {2017}
+}
+
+@article{modelagnostic_finn_2017,
+ abstract = {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.},
+ archivePrefix = {arXiv},
+ arxivid = {1703.03400},
+ author = {Finn, Chelsea and Abbeel, Pieter and Levine, Sergey},
+ eprint = {1703.03400},
+ journal = {International Conference on Machine Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {c7898980-1775-422e-aab9-30b4fdeeff7a},
+ title = {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks},
+ url = {https://www.semanticscholar.org/paper/c889d6f98e6d79b89c3a6adf8a921f88fa6ba518},
+ year = {2017}
+}
+
+@article{neural_bello_2017,
+ abstract = {We present an approach to automate the process of discovering optimization methods, with a focus on deep learning architectures. We train a Recurrent Neural Network controller to generate a string in a domain specific language that describes a mathematical update equation based on a list of primitive functions, such as the gradient, running average of the gradient, etc. The controller is trained with Reinforcement Learning to maximize the performance of a model after a few epochs. On CIFAR-10, our method discovers several update rules that are better than many commonly used optimizers, such as Adam, RMSProp, or SGD with and without Momentum on a ConvNet model. We introduce two new optimizers, named PowerSign and AddSign, which we show transfer well and improve training on a variety of different tasks and architectures, including ImageNet classification and Google's neural machine translation system.},
+ archivePrefix = {arXiv},
+ arxivid = {1709.07417},
+ author = {Bello, Irwan and Zoph, Barret and Vasudevan, Vijay and Le, Quoc V.},
+ eprint = {1709.07417},
+ journal = {arXiv: Artificial Intelligence},
+ primaryClass = {cs.LG},
+ researchrabbitid = {9a92dcfb-0f90-4fe5-9772-b93d0f45f859},
+ title = {Neural Optimizer Search with Reinforcement Learning},
+ url = {https://www.semanticscholar.org/paper/168b7d0ab57a331a228ce21ffd1becbb93066f79},
+ year = {2017}
+}
+
+@article{optimization_ravi_2017,
+ author = {Ravi, Sachin and Larochelle, Hugo},
+ journal = {International Conference on Learning Representations},
+ researchrabbitid = {81721121-d42c-494e-8763-8c80467b5605},
+ title = {Optimization as a Model for Few-Shot Learning},
+ url = {https://www.semanticscholar.org/paper/29c887794eed2ca9462638ff853e6fe1ab91d5d8},
+ year = {2017}
+}
+
+@article{pylo_janson_2025,
+ abstract = {Learned optimizers have been an active research topic over the past decade, with increasing progress toward practical, general-purpose optimizers that can serve as drop-in replacements for widely used methods like Adam. However, recent advances -- such as VeLO, which was meta-trained for 4000 TPU-months -- remain largely inaccessible to the broader community, in part due to their reliance on JAX and the absence of user-friendly packages for applying the optimizers after meta-training. To address this gap, we introduce PyLO, a PyTorch-based library that brings learned optimizers to the broader machine learning community through familiar, widely adopted workflows. Unlike prior work focused on synthetic or convex tasks, our emphasis is on applying learned optimization to real-world large-scale pre-training tasks. Our release includes a CUDA-accelerated version of the small_fc_lopt learned optimizer architecture from (Metz et al., 2022a), delivering substantial speedups -- from 39.36 to 205.59 samples/sec throughput for training ViT B/16 with batch size 32. PyLO also allows us to easily combine learned optimizers with existing optimization tools such as learning rate schedules and weight decay. When doing so, we find that learned optimizers can substantially benefit. Our code is available at https://github.com/Belilovsky-Lab/pylo},
+ archivePrefix = {arXiv},
+ arxivid = {2506.10315},
+ author = {Janson, Paul and Therien, Benjamin and Anthony, Quentin and Huang, Xiaolong and Moudgil, Abhinav and Belilovsky, Eugene},
+ doi = {10.48550/ARXIV.2506.10315},
+ eprint = {2506.10315},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {36d01088-32e3-42b5-9f24-6074091e56b1},
+ title = {PyLO: Towards Accessible Learned Optimizers in PyTorch},
+ url = {https://www.semanticscholar.org/paper/9e537b053ee3b3b8fa3ada451944ea611c347efe},
+ year = {2025}
+}
+
+@article{scale_kalogeropoulos_2024,
+ abstract = {This paper pertains to an emerging machine learning paradigm: learning higher-order functions, i.e. functions whose inputs are functions themselves, $\textit{particularly when these inputs are Neural Networks (NNs)}$. With the growing interest in architectures that process NNs, a recurring design principle has permeated the field: adhering to the permutation symmetries arising from the connectionist structure of NNs. $\textit{However, are these the sole symmetries present in NN parameterizations}$? Zooming into most practical activation functions (e.g. sine, ReLU, tanh) answers this question negatively and gives rise to intriguing new symmetries, which we collectively refer to as $\textit{scaling symmetries}$, that is, non-zero scalar multiplications and divisions of weights and biases. In this work, we propose $\textit{Scale Equivariant Graph MetaNetworks - ScaleGMNs}$, a framework that adapts the Graph Metanetwork (message-passing) paradigm by incorporating scaling symmetries and thus rendering neuron and edge representations equivariant to valid scalings. We introduce novel building blocks, of independent technical interest, that allow for equivariance or invariance with respect to individual scalar multipliers or their product and use them in all components of ScaleGMN. Furthermore, we prove that, under certain expressivity conditions, ScaleGMN can simulate the forward and backward pass of any input feedforward neural network. Experimental results demonstrate that our method advances the state-of-the-art performance for several datasets and activation functions, highlighting the power of scaling symmetries as an inductive bias for NN processing. The source code is publicly available at https://github.com/jkalogero/scalegmn.},
+ archivePrefix = {arXiv},
+ arxivid = {2406.10685},
+ author = {Kalogeropoulos, Ioannis and Bouritsas, Giorgos and Panagakis, Yannis},
+ doi = {10.48550/ARXIV.2406.10685},
+ eprint = {2406.10685},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {b912242c-fad8-4033-94b2-e6a2dcacc51f},
+ title = {Scale Equivariant Graph Metanetworks},
+ url = {https://www.semanticscholar.org/paper/d584110aad0ba7492823d041b18af4ca77239c95},
+ year = {2024}
+}
+
+@article{scaling_antoniou_2023,
+ abstract = {We analyze VeLO (versatile learned optimizer), the largest scale attempt to train a general purpose"foundational"optimizer to date. VeLO was trained on thousands of machine learning tasks using over 4000 TPU months with the goal of producing an optimizer capable of generalizing to new problems while being hyperparameter free, and outperforming industry standards such as Adam. We independently evaluate VeLO on the MLCommons optimizer benchmark suite. We find that, contrary to initial claims: (1) VeLO has a critical hyperparameter that needs problem-specific tuning, (2) VeLO does not necessarily outperform competitors in quality of solution found, and (3) VeLO is not faster than competing optimizers at reducing the training loss. These observations call into question VeLO's generality and the value of the investment in training it.},
+ archivePrefix = {arXiv},
+ arxivid = {2310.18191},
+ author = {Antoniou, Antreas and Gouk, Henry and Hospedales, Timothy M.},
+ doi = {10.48550/ARXIV.2310.18191},
+ eprint = {2310.18191},
+ journal = {ICBINB},
+ primaryClass = {cs.LG},
+ researchrabbitid = {5a43f3bd-123d-49d2-95e2-d7ecd2395549},
+ title = {Is Scaling Learned Optimizers Worth It? Evaluating The Value of VeLO's 4000 TPU Months},
+ url = {https://www.semanticscholar.org/paper/d92fe2b8861e8ef74e030d674bedcd505a98def9},
+ year = {2023}
+}
+
+@article{tasks_metz_2020,
+ abstract = {Much as replacing hand-designed features with learned functions has revolutionized how we solve perceptual tasks, we believe learned algorithms will transform how we train models. In this work we focus on general-purpose learned optimizers capable of training a wide variety of problems with no user-specified hyperparameters. We introduce a new, neural network parameterized, hierarchical optimizer with access to additional features such as validation loss to enable automatic regularization. Most learned optimizers have been trained on only a single task, or a small number of tasks. We train our optimizers on thousands of tasks, making use of orders of magnitude more compute, resulting in optimizers that generalize better to unseen tasks. The learned optimizers not only perform well, but learn behaviors that are distinct from existing first order optimizers. For instance, they generate update steps that have implicit regularization and adapt as the problem hyperparameters (e.g. batch size) or architecture (e.g. neural network width) change. Finally, these learned optimizers show evidence of being useful for out of distribution tasks such as training themselves from scratch.},
+ archivePrefix = {arXiv},
+ arxivid = {2009.11243},
+ author = {Metz, Luke and Maheswaranathan, Niru and Freeman, Chris and Poole, Benjamin and Sohl-Dickstein, Jascha Narain},
+ eprint = {2009.11243},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {88a5a4d2-23b0-44ad-bcab-6c33ab63098c},
+ title = {Tasks, stability, architecture, and compute: Training more effective learned optimizers, and using them to train themselves},
+ url = {https://www.semanticscholar.org/paper/8a858fb857abc06817d245bcb774a3901676f144},
+ year = {2020}
+}
+
+@article{tasks_metz_2020,
+ abstract = {Much as replacing hand-designed features with learned functions has revolutionized how we solve perceptual tasks, we believe learned algorithms will transform how we train models. In this work we focus on general-purpose learned optimizers capable of training a wide variety of problems with no user-specified hyperparameters. We introduce a new, neural network parameterized, hierarchical optimizer with access to additional features such as validation loss to enable automatic regularization. Most learned optimizers have been trained on only a single task, or a small number of tasks. We train our optimizers on thousands of tasks, making use of orders of magnitude more compute, resulting in optimizers that generalize better to unseen tasks. The learned optimizers not only perform well, but learn behaviors that are distinct from existing first order optimizers. For instance, they generate update steps that have implicit regularization and adapt as the problem hyperparameters (e.g. batch size) or architecture (e.g. neural network width) change. Finally, these learned optimizers show evidence of being useful for out of distribution tasks such as training themselves from scratch.},
+ archivePrefix = {arXiv},
+ arxivid = {2009.11243},
+ author = {Metz, Luke and Maheswaranathan, Niru and Freeman, C. Daniel and Poole, Ben and Sohl‐Dickstein, Jascha},
+ eprint = {2009.11243},
+ journal = {arXiv: Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {d794d8f0-773a-447e-b434-8ef748a40d25},
+ title = {Tasks, stability, architecture, and compute: Training more effective learned optimizers, and using them to train themselves.},
+ url = {https://www.semanticscholar.org/paper/8a858fb857abc06817d245bcb774a3901676f144},
+ year = {2020}
+}
+
+@article{training_chen_2020,
+ abstract = {Learning to optimize (L2O) has gained increasing attention since classical optimizers require laborious problem-specific design and hyperparameter tuning. However, there is a gap between the practical demand and the achievable performance of existing L2O models. Specifically, those learned optimizers are applicable to only a limited class of problems, and often exhibit instability. With many efforts devoted to designing more sophisticated L2O models, we argue for another orthogonal, under-explored theme: the training techniques for those L2O models. We show that even the simplest L2O model could have been trained much better. We first present a progressive training scheme to gradually increase the optimizer unroll length, to mitigate a well-known L2O dilemma of truncation bias (shorter unrolling) versus gradient explosion (longer unrolling). We further leverage off-policy imitation learning to guide the L2O learning, by taking reference to the behavior of analytical optimizers. Our improved training techniques are plugged into a variety of state-of-the-art L2O models, and immediately boost their performance, without making any change to their model structures. Especially, by our proposed techniques, an earliest and simplest L2O model can be trained to outperform the latest complicated L2O models on a number of tasks. Our results demonstrate a greater potential of L2O yet to be unleashed, and urge to rethink the recent progress. Our codes are publicly available at: this https URL.},
+ archivePrefix = {arXiv},
+ arxivid = {2010.09089},
+ author = {Chen, Tianlong and Zhang, Weiyi and Zhou, Jingyang and Chang, Shiyu and Liu, Sijia and Amini, Lisa and Yan, Shuicheng and Wang, Zhangyang},
+ eprint = {2010.09089},
+ journal = {arXiv: Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {22f5ad70-8f58-4fba-8274-a0f07dafa058},
+ title = {Training Stronger Baselines for Learning to Optimize},
+ url = {https://www.semanticscholar.org/paper/3b5bd23386ded50640d285bc95d748272b23ca5c},
+ year = {2020}
+}
+
+@article{tutorial_amos_2022,
+ author = {Amos, Brandon},
+ journal = {ArXiv},
+ researchrabbitid = {035ec1e7-e023-415e-bdfb-ec8d11df5dc6},
+ title = {Tutorial on amortized optimization for learning to optimize over continuous domains},
+ url = {https://www.semanticscholar.org/paper/8198ec90c9e97f583f921451e7112d943da75cb4},
+ year = {2022}
+}
+
+@article{understanding_metz_2018,
+ abstract = {Deep learning has shown that learned functions can dramatically outperform hand-designed functions on perceptual tasks. Analogously, this suggests that learned optimizers may similarly outperform current hand-designed optimizers, especially for specific problems. However, learned optimizers are notoriously difficult to train and have yet to demonstrate wall-clock speedups over hand-designed optimizers, and thus are rarely used in practice. Typically, learned optimizers are trained by truncated backpropagation through an unrolled optimization process resulting in gradients that are either strongly biased (for short truncations) or have exploding norm (for long truncations). In this work we propose a training scheme which overcomes both of these difficulties, by dynamically weighting two unbiased gradient estimators for a variational loss on optimizer performance, allowing us to train neural networks to perform optimization of a specific task faster than tuned first-order methods. We demonstrate these results on problems where our learned optimizer trains convolutional networks faster in wall-clock time compared to tuned first-order methods and with an improvement in test loss.},
+ archivePrefix = {arXiv},
+ arxivid = {1810.10180},
+ author = {Metz, Luke and Maheswaranathan, Niru and Nixon, Jeremy and Freeman, Chris and Sohl-Dickstein, Jascha Narain},
+ eprint = {1810.10180},
+ journal = {International Conference on Machine Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {b6fa85b7-71da-4120-9d3e-93ec3c0a69f6},
+ title = {Understanding and correcting pathologies in the training of learned optimizers},
+ url = {https://www.semanticscholar.org/paper/cb4147fbd0704398c692667078efff935a36bb6d},
+ year = {2018}
+}
+
+@article{understanding_metz_2019,
+ abstract = {Deep learning has shown that learned functions can dramatically outperform hand-designed functions on perceptual tasks. Analogously, this suggests that learned optimizers may similarly outperform current hand-designed optimizers, especially for specific problems. However, learned optimizers are notoriously difficult to train and have yet to demonstrate wall-clock speedups over hand-designed optimizers, and thus are rarely used in practice. Typically, learned optimizers are trained by truncated backpropagation through an unrolled optimization process resulting in gradients that are either strongly biased (for short truncations) or have exploding norm (for long truncations). In this work we propose a training scheme which overcomes both of these difficulties, by dynamically weighting two unbiased gradient estimators for a variational loss on optimizer performance, allowing us to train neural networks to perform optimization of a specific task faster than tuned first-order methods. We demonstrate these results on problems where our learned optimizer trains convolutional networks faster in wall-clock time compared to tuned first-order methods and with an improvement in test loss.},
+ archivePrefix = {arXiv},
+ arxivid = {1810.10180},
+ author = {Metz, Luke and Maheswaranathan, Niru and Nixon, Jeremy and Freeman, C. Daniel and Sohl‐Dickstein, Jascha},
+ eprint = {1810.10180},
+ journal = {International Conference on Machine Learning},
+ primaryClass = {cs.LG},
+ researchrabbitid = {09e65325-079d-41b5-9407-ea7a6afdba9b},
+ title = {Understanding and correcting pathologies in the training of learned optimizers},
+ url = {https://www.semanticscholar.org/paper/cb4147fbd0704398c692667078efff935a36bb6d},
+ year = {2019}
+}
+
+@article{velo_metz_2022,
+ abstract = {While deep learning models have replaced hand-designed features across many domains, these models are still trained with hand-designed optimizers. In this work, we leverage the same scaling approach behind the success of deep learning to learn versatile optimizers. We train an optimizer for deep learning which is itself a small neural network that ingests gradients and outputs parameter updates. Meta-trained with approximately four thousand TPU-months of compute on a wide variety of optimization tasks, our optimizer not only exhibits compelling performance, but optimizes in interesting and unexpected ways. It requires no hyperparameter tuning, instead automatically adapting to the specifics of the problem being optimized. We open source our learned optimizer, meta-training code, the associated train and test data, and an extensive optimizer benchmark suite with baselines at velo-code.github.io.},
+ archivePrefix = {arXiv},
+ arxivid = {2211.09760},
+ author = {Metz, Luke and Harrison, J. and Freeman, C. Daniel and Merchant, Amil and Beyer, Lucas and Bradbury, James T. and Agrawal, Naman and Poole, Ben and Mordatch, Igor and Roberts, Adam and Sohl‐Dickstein, Jascha},
+ doi = {10.48550/ARXIV.2211.09760},
+ eprint = {2211.09760},
+ journal = {arXiv.org},
+ primaryClass = {cs.LG},
+ researchrabbitid = {b66f6448-41ba-4ef7-b60d-3bcad2d27389},
+ title = {VeLO: Training Versatile Learned Optimizers by Scaling Up},
+ url = {https://www.semanticscholar.org/paper/c088b46519c036149a9f6da4ec36383b800a0d2a},
+ year = {2022}
+}

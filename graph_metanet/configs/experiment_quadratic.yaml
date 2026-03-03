@@ -1,0 +1,41 @@
+# Experiment: Quadratic optimization with Graph MetaNetwork
+# Tests basic optimization capability on well-conditioned quadratic functions
+
+experiment_name: "quadratic_sweep"
+seed: 42
+device: "cpu"
+
+model:
+  node_hidden_dim: 32
+  edge_hidden_dim: 32
+  gnn_hidden_dim: 64
+  num_gnn_layers: 2
+  num_mp_rounds: 1
+  use_layer_norm: true
+  use_per_param_heads: false
+  output_scale: 0.01
+  use_hidden_state: true
+  hidden_state_dim: 16
+
+meta_training:
+  meta_lr: 0.003
+  num_outer_steps: 500
+  num_inner_steps: 30
+  truncation_length: 10
+  eval_every: 25
+  num_eval_tasks: 3
+  num_eval_steps: 30
+
+tasks:
+  task_names:
+    - "quadratic"
+  task_params:
+    quadratic:
+      dim: 10
+      condition_number: 10.0
+
+wandb:
+  enabled: true
+  project: "graph-metanet-optimizer"
+  tags: ["quadratic", "ablation"]
+  notes: "Quadratic sweep to validate basic optimizer learning"

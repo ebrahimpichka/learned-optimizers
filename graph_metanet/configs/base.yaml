@@ -1,0 +1,54 @@
+# Base configuration for Graph MetaNetwork Learned Optimizer experiments
+# Override specific values in experiment-specific configs
+
+experiment_name: "base"
+seed: 42
+device: "cpu"  # or "cuda"
+output_dir: "outputs"
+
+model:
+  node_hidden_dim: 64
+  edge_hidden_dim: 64
+  gnn_hidden_dim: 128
+  num_gnn_layers: 3
+  num_mp_rounds: 2
+  use_layer_norm: true
+  use_per_param_heads: false
+  output_scale: 0.001
+  use_hidden_state: true
+  hidden_state_dim: 32
+
+meta_training:
+  meta_lr: 0.001
+  meta_optimizer: "adam"
+  meta_weight_decay: 0.0
+  num_outer_steps: 1000
+  num_inner_steps: 20
+  truncation_length: 10
+  grad_clip_norm: 1.0
+  eval_every: 50
+  save_every: 200
+  num_eval_tasks: 5
+  num_eval_steps: 50
+
+tasks:
+  task_names:
+    - "quadratic"
+    - "mlp_regression"
+  task_params:
+    quadratic:
+      dim: 10
+      condition_number: 10.0
+    mlp_regression:
+      input_dim: 10
+      hidden_dim: 32
+      output_dim: 1
+      num_layers: 2
+
+wandb:
+  enabled: false
+  project: "graph-metanet-optimizer"
+  entity: null
+  run_name: null
+  tags: []
+  notes: ""

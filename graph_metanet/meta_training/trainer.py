@@ -162,7 +162,8 @@ def meta_train_step(
                         direction = -grad
                     else:
                         direction = torch.zeros_like(params[name])
-                    # updates_raw[i, 0] is differentiable w.r.t. optimizer
+                    # updates_raw[i, 0] is differentiable w.r.t. optimizer params;
+                    # scalar broadcasts to full gradient shape for the parameter update
                     new_params[name] = params[name].detach() + updates_raw[i, 0] * direction
                     matched = True
                     break

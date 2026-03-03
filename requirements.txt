@@ -1,6 +1,6 @@
 bibtexparser
 requests
-torch>=2.0.0
+torch>=2.6.0
 pyyaml
 numpy
 wandb

@@ -1,2 +1,7 @@
 bibtexparser
 requests
+torch>=2.6.0
+pyyaml
+numpy
+wandb
+pytest
